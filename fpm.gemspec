@@ -47,13 +47,9 @@ Gem::Specification.new do |spec|
   spec.add_dependency("pleaserun", "~> 0.0.29") # license: Apache 2
 
   # For sourcing from git repos
-  spec.add_dependency("git", ">= 1.3.0", "< 2.0") # license: MIT
+  spec.add_dependency("git", ">= 1.3.0", "< 1.7") # license: MIT
 
   spec.add_dependency("stud")
-
-  # In Ruby 3.0, rexml was moved to a bundled gem instead of a default one,
-  # so I think this needs to be added explicitly?
-  spec.add_dependency("rexml")
 
   spec.add_development_dependency("rspec", "~> 3.0.0") # license: MIT (according to wikipedia)
   spec.add_development_dependency("insist", "~> 1.0.0") # license: Apache 2
